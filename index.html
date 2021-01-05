@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <!--Icone Site -->
+    <link rel="shortcut icon" href="img/logoicone.ico" type="image/x-icon"/>
+	<title>Hot Site Rhino</title>
+    <!-- Chamada do Javascript -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+    <!-- CSS -->
+<style >
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+.links{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	display: flex;
+}
+
+.links label{
+	padding: 10px 0;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: all .4s;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 100%;
+	color: #808080;
+
+}
+.links label:hover{
+	background-color: rgba(255,255,255,.2);
+}
+
+.scroll{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.sections{
+
+	transition:  all .4s;
+}
+
+input{
+	display: none;
+}
+.bloco{
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#home{
+    background-color: #050505;
+	
+    
+}
+
+#rfrontal{
+	background-color: #fff;
+
+}
+#cadeiras{
+	background-color: #fff;
+}
+#avaliacao{
+	background-color: #aaa;
+}
+
+
+
+
+#rd_rfrontal:checked ~ .sections{
+	margin-top: -100vh;
+}
+#rd_garantia:checked ~ .sections{
+	margin-top: -200vh;
+}
+
+#rd_avaliacao:checked ~ .sections{
+	margin-top: -300vh;
+}
+
+
+#home img{
+	width: 90%;
+}
+
+#tabelaimg{
+        margin-bottom: auto;
+        width: 300%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+#rf{
+        width: 80%;
+        bottom: 2500px;
+        left: 900px;
+        background-color: #d7011d;
+    }
+    #rl{
+  
+        width: 40%;
+        right:900px;
+        top 20%;
+        
+    }
+    footer{
+	background-color:#050505;
+	color:#e6e6e6;
+	min-width:200px;
+	padding:1em;
+	text-align:center;
+    width: 100%;
+	height: 50px;
+	
+}    
+
+    }
+</style>
+</head>
+<body>
+<!-- Corpo do Site -->
+<nav class="links">
+	<label for="rd_home">Apresentação</label>
+	<label for="rd_rfrontal">Especificação</label>
+	<label for="rd_garantia">Garantia</label>
+    <a href="https://www.dt3sports.com.br/loja/elite-series/cadeira-gamer-dt3sports-rhino/#page" target="_blank"><button style="background: #d6001c; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px; font-weight:bold;">Comprar</button></a>
+</nav>
+
+
+<div class="scroll">
+	
+	<input type="radio" name="grupo" id="rd_home" checked="true">
+	<input type="radio" name="grupo" id="rd_rfrontal">
+	<input type="radio" name="grupo" id="rd_garantia">
+
+	<section class="sections">
+		<section class="bloco" id="home">
+
+<!-- Inicio Javascript -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/capa1920x1000.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/designfinal.jpg" alt="responsive slider" title="" id="wows1_1"/></a></li>
+		<li><img src="data1/images/almofada.jpg" alt="" title="" id="wows1_2"/></li>
+</div>
+<div class="ws_shadow"></div>
+	   <script type="text/javascript" src="engine1/wowslider.js"></script>
+       <script type="text/javascript" src="engine1/script.js"></script>
+<!-- Fim Javascript -->
+            
+        </section>
+        <section class="bloco" id="rfrontal"><img id="tabelaimg" src="img/especificacao.png"></section>
+            <section class="bloco" id="cadeiras"><img id="rf" src="Img/fotogarantia1920x600.jpg">  
+            
+        </section>
+		<section class="bloco" id="garantia"><img src=""></section>
+		
+	</section>
+
+</div>
+    <!-- Rodapé -->
+<footer>
+		<p class="redes"> 
+				<a href="https://www.facebook.com/DT3sports/"target="_blank"><img src="img/facebook.png" title="Facebook"></a>
+				<a href="https://twitter.com/dt3sports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="img/twitter.png" title="Twitter"></a>
+				<a href="https://www.instagram.com/dt3sports/?hl=pt-br"target="_blank"><img src="img/instagram.png" title="Instagram"></a>
+				<a href="https://www.youtube.com/channel/UC-A9VOzf0fUhoMZ4DcA3kaQ"target="_blank"><img src="img/youtube.png" title="Youtube"></a>
+			</p>
+			<p>	
+				&reg Desenvolvido por Agatha &copy Todos os direitos autorizados pela DT3 Esports.
+			</p>
+		</footer>
+
+
+</body>
+</html>
